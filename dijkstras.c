@@ -222,7 +222,7 @@ int driverselection(char branch[]) {
   float driver_rating[10];
   int driver_index[10];
   char driver_name[10][20];
-  char driver_ph[10][10];
+  char driver_ph[10][20];
   int driver_loc[10];
   char DriverLocations[10][25];
 
