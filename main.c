@@ -75,6 +75,12 @@ int main() {
                             break;
                         // Function to delete query
                         delquer(quernum);
+                      fque = fopen("queries.txt", "r");
+                      while (fscanf(fque, "%d %d %[^\n]", &compno[p], &rnum[p], que_line) != EOF) {
+                        printf("%-4d\t%-4d\t%-s%s\n", compno[p], rnum[p], "", que_line);
+                        p++;
+                      }
+                      fclose(fque);
                     }
                     exit(0);
                 }
